@@ -2,6 +2,7 @@ import XCTest
 import RealmSwift
 @testable import BIH
 
+// Make it instantiated or injected somewhere
 final class CoffeeFilterTests: XCTestCase {
     var coffees: [Coffee]!
 

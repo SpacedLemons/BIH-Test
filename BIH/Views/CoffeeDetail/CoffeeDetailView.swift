@@ -2,32 +2,34 @@ import RealmSwift
 import SwiftUI
 
 struct CoffeeDetailView: View {
-    @ObservedObject var viewModel: CoffeeViewModel
     @ObservedRealmObject var coffee: Coffee
+    @ObservedObject var coffeeViewModel: CoffeeViewModel
+    @ObservedObject var reviewViewModel: ReviewViewModel
 
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 16) {
                 CoffeeDetailContentView(coffee: coffee)
                 CoffeeButtonView(
-                    viewModel: viewModel,
+                    coffeeViewModel: coffeeViewModel,
+                    reviewViewModel: reviewViewModel,
                     coffee: coffee
                 )
                 CoffeeReviewView(
                     coffee: coffee,
-                    selectedReview: $viewModel.selectedReview
+                    selectedReview: $reviewViewModel.selectedReview
                 )
                 Spacer()
             }
             .padding()
             .navigationTitle(coffee.title)
-            .sheet(isPresented: $viewModel.isReviewing) {
+            .sheet(isPresented: $reviewViewModel.isReviewing) {
                 ReviewFormView(
-                    viewModel: viewModel,
-                    coffee: coffee
+                    coffee: coffee,
+                    reviewViewModel: reviewViewModel
                 )
             }
-            .sheet(item: $viewModel.selectedReview) { review in
+            .sheet(item: $reviewViewModel.selectedReview) { review in
                 CoffeeReviewContentView(review: review)
             }
         }

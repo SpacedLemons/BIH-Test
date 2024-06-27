@@ -11,10 +11,12 @@
 		0E62565D2C109B8600B08B87 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 0E62565B2C109B8600B08B87 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0E6256602C10AA3C00B08B87 /* CoffeeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E62565F2C10AA3C00B08B87 /* CoffeeFilter.swift */; };
 		0E6256642C10AB5400B08B87 /* CoffeeFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6256632C10AB5400B08B87 /* CoffeeFilterTests.swift */; };
+		0E7D65112C2DC10500D98245 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D65102C2DC10500D98245 /* ReviewService.swift */; };
+		0E7D65132C2DC15A00D98245 /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D65122C2DC15A00D98245 /* ReviewModel.swift */; };
+		0E7D65172C2DC33300D98245 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D65162C2DC33300D98245 /* ReviewViewModel.swift */; };
 		0E8CABD22C10327200CAD04E /* ReviewFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CABD12C10327200CAD04E /* ReviewFormView.swift */; };
 		0E8CABD42C10336B00CAD04E /* CoffeeReviewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CABD32C10336B00CAD04E /* CoffeeReviewContentView.swift */; };
-		0E8CABD82C1037D700CAD04E /* CoffeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CABD72C1037D700CAD04E /* CoffeeResponse.swift */; };
-		0E8CABDB2C10641200CAD04E /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CABDA2C10641200CAD04E /* DispatchQueue.swift */; };
+		0E8CABD82C1037D700CAD04E /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CABD72C1037D700CAD04E /* CoffeeModel.swift */; };
 		0E8CABDD2C106AE900CAD04E /* CoffeeDetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CABDC2C106AE900CAD04E /* CoffeeDetailContentView.swift */; };
 		0E8CABDF2C106AF100CAD04E /* CoffeeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CABDE2C106AF100CAD04E /* CoffeeButtonView.swift */; };
 		0E8CABE12C106AF800CAD04E /* CoffeeReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CABE02C106AF800CAD04E /* CoffeeReviewView.swift */; };
@@ -26,7 +28,7 @@
 		0EF4961E2C0F7772007402F5 /* CoffeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4961D2C0F7772007402F5 /* CoffeeListView.swift */; };
 		0EF496202C0F7773007402F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF4961F2C0F7773007402F5 /* Assets.xcassets */; };
 		0EF4962E2C0F7773007402F5 /* CoffeeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4962D2C0F7773007402F5 /* CoffeeViewModelTests.swift */; };
-		0EF496472C0F99E7007402F5 /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF496462C0F99E7007402F5 /* CoffeeModel.swift */; };
+		0EF496472C0F99E7007402F5 /* CoffeePersistenceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF496462C0F99E7007402F5 /* CoffeePersistenceObject.swift */; };
 		0EF496532C0F9D51007402F5 /* CoffeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF496522C0F9D51007402F5 /* CoffeeService.swift */; };
 		0EF496552C0F9D5E007402F5 /* CoffeePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF496542C0F9D5E007402F5 /* CoffeePersistence.swift */; };
 		0EF496572C0F9D6E007402F5 /* CoffeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF496562C0F9D6E007402F5 /* CoffeeViewModel.swift */; };
@@ -74,10 +76,12 @@
 		0E62565A2C109B7400B08B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0E62565F2C10AA3C00B08B87 /* CoffeeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeFilter.swift; sourceTree = "<group>"; };
 		0E6256632C10AB5400B08B87 /* CoffeeFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeFilterTests.swift; sourceTree = "<group>"; };
+		0E7D65102C2DC10500D98245 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		0E7D65122C2DC15A00D98245 /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
+		0E7D65162C2DC33300D98245 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
 		0E8CABD12C10327200CAD04E /* ReviewFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormView.swift; sourceTree = "<group>"; };
 		0E8CABD32C10336B00CAD04E /* CoffeeReviewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeReviewContentView.swift; sourceTree = "<group>"; };
-		0E8CABD72C1037D700CAD04E /* CoffeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeResponse.swift; sourceTree = "<group>"; };
-		0E8CABDA2C10641200CAD04E /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		0E8CABD72C1037D700CAD04E /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
 		0E8CABDC2C106AE900CAD04E /* CoffeeDetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailContentView.swift; sourceTree = "<group>"; };
 		0E8CABDE2C106AF100CAD04E /* CoffeeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeButtonView.swift; sourceTree = "<group>"; };
 		0E8CABE02C106AF800CAD04E /* CoffeeReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeReviewView.swift; sourceTree = "<group>"; };
@@ -92,7 +96,7 @@
 		0EF496212C0F7773007402F5 /* BIH.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BIH.entitlements; sourceTree = "<group>"; };
 		0EF496292C0F7773007402F5 /* BIHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BIHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF4962D2C0F7773007402F5 /* CoffeeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewModelTests.swift; sourceTree = "<group>"; };
-		0EF496462C0F99E7007402F5 /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
+		0EF496462C0F99E7007402F5 /* CoffeePersistenceObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePersistenceObject.swift; sourceTree = "<group>"; };
 		0EF496522C0F9D51007402F5 /* CoffeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeService.swift; sourceTree = "<group>"; };
 		0EF496542C0F9D5E007402F5 /* CoffeePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePersistence.swift; sourceTree = "<group>"; };
 		0EF496562C0F9D6E007402F5 /* CoffeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewModel.swift; sourceTree = "<group>"; };
@@ -119,13 +123,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7D650E2C2DC0D200D98245 /* Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				0EF496522C0F9D51007402F5 /* CoffeeService.swift */,
+				0EF496462C0F99E7007402F5 /* CoffeePersistenceObject.swift */,
+				0E8CABD72C1037D700CAD04E /* CoffeeModel.swift */,
+			);
+			path = Coffee;
+			sourceTree = "<group>";
+		};
+		0E7D650F2C2DC0F200D98245 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				0E7D65102C2DC10500D98245 /* ReviewService.swift */,
+				0E7D65122C2DC15A00D98245 /* ReviewModel.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		0E7D65152C2DC32300D98245 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EF496562C0F9D6E007402F5 /* CoffeeViewModel.swift */,
+				0E7D65162C2DC33300D98245 /* ReviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0E8CABD52C10356900CAD04E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				0EF496542C0F9D5E007402F5 /* CoffeePersistence.swift */,
-				0EF496522C0F9D51007402F5 /* CoffeeService.swift */,
-				0EF496462C0F99E7007402F5 /* CoffeeModel.swift */,
-				0E8CABD72C1037D700CAD04E /* CoffeeResponse.swift */,
+				0E7D650F2C2DC0F200D98245 /* Review */,
+				0E7D650E2C2DC0D200D98245 /* Coffee */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -133,26 +164,18 @@
 		0E8CABD62C10357000CAD04E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0EF4961D2C0F7772007402F5 /* CoffeeListView.swift */,
 				0E62565F2C10AA3C00B08B87 /* CoffeeFilter.swift */,
-				0EF496562C0F9D6E007402F5 /* CoffeeViewModel.swift */,
+				0EF4961D2C0F7772007402F5 /* CoffeeListView.swift */,
 				0E8CABE42C106E6A00CAD04E /* CoffeeDetail */,
+				0E8CABE52C107C7E00CAD04E /* Review */,
+				0E7D65152C2DC32300D98245 /* ViewModel */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		0E8CABD92C10640500CAD04E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				0E8CABDA2C10641200CAD04E /* DispatchQueue.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0E8CABE42C106E6A00CAD04E /* CoffeeDetail */ = {
 			isa = PBXGroup;
 			children = (
-				0E8CABE52C107C7E00CAD04E /* Review */,
 				0E8CABDE2C106AF100CAD04E /* CoffeeButtonView.swift */,
 				0E8CABDC2C106AE900CAD04E /* CoffeeDetailContentView.swift */,
 				0EF496622C0FA09F007402F5 /* CoffeeDetailView.swift */,
@@ -198,7 +221,6 @@
 				0E62565A2C109B7400B08B87 /* Info.plist */,
 				0EF4961B2C0F7772007402F5 /* BIHApp.swift */,
 				0EF4961F2C0F7773007402F5 /* Assets.xcassets */,
-				0E8CABD92C10640500CAD04E /* Extensions */,
 				0E8CABD52C10356900CAD04E /* Networking */,
 				0E8CABD62C10357000CAD04E /* Views */,
 			);
@@ -333,19 +355,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7D65112C2DC10500D98245 /* ReviewService.swift in Sources */,
 				0EF4961E2C0F7772007402F5 /* CoffeeListView.swift in Sources */,
+				0E7D65172C2DC33300D98245 /* ReviewViewModel.swift in Sources */,
 				0E8CABDF2C106AF100CAD04E /* CoffeeButtonView.swift in Sources */,
 				0E8CABDD2C106AE900CAD04E /* CoffeeDetailContentView.swift in Sources */,
-				0E8CABDB2C10641200CAD04E /* DispatchQueue.swift in Sources */,
 				0E8CABD22C10327200CAD04E /* ReviewFormView.swift in Sources */,
-				0E8CABD82C1037D700CAD04E /* CoffeeResponse.swift in Sources */,
+				0E8CABD82C1037D700CAD04E /* CoffeeModel.swift in Sources */,
 				0E8CABE72C107C9E00CAD04E /* UserDetailsSection.swift in Sources */,
 				0EF4961C2C0F7772007402F5 /* BIHApp.swift in Sources */,
-				0EF496472C0F99E7007402F5 /* CoffeeModel.swift in Sources */,
+				0EF496472C0F99E7007402F5 /* CoffeePersistenceObject.swift in Sources */,
 				0EF496532C0F9D51007402F5 /* CoffeeService.swift in Sources */,
 				0E8CABE92C107CBE00CAD04E /* ReviewInputSection.swift in Sources */,
 				0EF496632C0FA09F007402F5 /* CoffeeDetailView.swift in Sources */,
 				0EF496572C0F9D6E007402F5 /* CoffeeViewModel.swift in Sources */,
+				0E7D65132C2DC15A00D98245 /* ReviewModel.swift in Sources */,
 				0E8CABD42C10336B00CAD04E /* CoffeeReviewContentView.swift in Sources */,
 				0E8CABE12C106AF800CAD04E /* CoffeeReviewView.swift in Sources */,
 				0EF496552C0F9D5E007402F5 /* CoffeePersistence.swift in Sources */,

@@ -2,7 +2,10 @@ import RealmSwift
 
 enum SortOrder { case ascending, descending, none }
 
-final class CoffeeFilter {
+struct CoffeeFilter {
+    
+    private init() {}
+    
     static func filterAndSort(coffees: [Coffee], sortOrder: SortOrder, showLikedOnly: Bool, searchText: String) -> [Coffee] {
         var result = coffees
         
