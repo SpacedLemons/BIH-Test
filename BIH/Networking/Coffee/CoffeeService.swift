@@ -14,14 +14,14 @@ final class CoffeeService: CoffeeServiceProtocol {
             throw URLError(.badServerResponse)
         }
         
-        let apiCoffees = try JSONDecoder().decode([CoffeeResponse].self, from: data)
+        let apiCoffees = try JSONDecoder().decode([CoffeeModel].self, from: data)
         
         let coffees = apiCoffees.map { apiCoffee -> Coffee in
             let coffee = Coffee()
             coffee.title = apiCoffee.title
             coffee.descriptionText = apiCoffee.description
             coffee.ingredients = apiCoffee.ingredients.joined(separator: ", ")
-            coffee.imageURL = apiCoffee.image
+            coffee.imageURL = apiCoffee.imageURL.absoluteString
             return coffee
         }
         

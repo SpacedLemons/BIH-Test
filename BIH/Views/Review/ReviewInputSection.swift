@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ReviewInputSection: View {
-    @ObservedObject var viewModel: CoffeeViewModel
+    @ObservedObject var viewModel: ReviewViewModel
 
     var body: some View {
         Section(header: Text("Your Review")) {

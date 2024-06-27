@@ -76,26 +76,4 @@ final class CoffeeViewModelTests: XCTestCase {
         // Verify the liked property is toggled back
         XCTAssertFalse(coffee.liked)
     }
-
-    func testSaveReviewLocally() {
-        // Create a coffee object and save it to Realm
-        let coffee = Coffee()
-        coffee.title = "Latte"
-        try! realm.write { realm.add(coffee) }
-
-        viewModel.reviewName = "John Doe"
-        viewModel.reviewDate = Date(timeIntervalSince1970: 1622520000)
-        viewModel.reviewDescription = "Great coffee!"
-        viewModel.reviewRating = 5
-
-        // Save review locally
-        viewModel.saveReviewLocally(for: coffee)
-        
-        // Verify the review is added
-        XCTAssertEqual(coffee.reviews.count, 1)
-        XCTAssertEqual(coffee.reviews.first?.name, "John Doe")
-        XCTAssertEqual(coffee.reviews.first?.reviewDescription, "Great coffee!")
-        XCTAssertEqual(coffee.reviews.first?.rating, 5)
-        XCTAssertEqual(coffee.reviews.first?.date, Date(timeIntervalSince1970: 1622520000))
-    }
 }

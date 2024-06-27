@@ -2,13 +2,14 @@ import RealmSwift
 import SwiftUI
 
 struct CoffeeButtonView: View {
-    @ObservedObject var viewModel: CoffeeViewModel
+    @ObservedObject var coffeeViewModel: CoffeeViewModel
+    @ObservedObject var reviewViewModel: ReviewViewModel
     let coffee: Coffee
 
     var body: some View {
         VStack {
             HStack {
-                Button(action: { viewModel.toggleLike(for: coffee) }) {
+                Button(action: { coffeeViewModel.toggleLike(for: coffee) }) {
                     HStack {
                         Image(systemName: coffee.liked ? "heart.fill" : "heart")
                             .foregroundColor(coffee.liked ? .red : .gray)
@@ -19,7 +20,7 @@ struct CoffeeButtonView: View {
                     .cornerRadius(8)
                 }
                 
-                Button("Leave a Review") { viewModel.isReviewing.toggle() }
+                Button("Leave a Review") { reviewViewModel.isReviewing.toggle() }
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(.white)
